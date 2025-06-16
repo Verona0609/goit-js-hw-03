@@ -72,3 +72,37 @@ console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
 console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+
+//JS-test середнє значення
+const prices = [100, 150, 200, 250, 300];
+function result(prices) {
+  let sum = 0;
+  for (let i = 0; i < prices.length; i++) sum = sum + prices[i];
+  return sum / prices.length;
+}
+
+//Чи іистачить пального
+let fuel = 10; // літрів
+let distance = 50;
+
+function enoghFuel(fuel, distance) {
+  if (fuel * 5 >= distance) {
+    return "Go ahead!";
+  } else {
+    return "Refuel!";
+  }
+}
+
+console.log(enoghFuel(3, 16));
+
+//4 Подія при настисканні виводить текст
+
+const button = document.getElementById("clickBtn");
+const resultAfter = document.getElementById("result");
+
+button.addEventListener("click", function () {
+  const addedText = "Hello, Powercoders!";
+  resultAfter.innerText = addedText;
+});
+
+console.log(typeof null); //object
